@@ -108,6 +108,6 @@ button:hover {
 @media (max-width: 480px) {
     .flipbook {
         width: 95vw;   /* 95% of the viewport width */
-        height: 60vh;  /* 60% of the viewport height */
+        height: 30vh;  /* 60% of the viewport height */
     }
 }
