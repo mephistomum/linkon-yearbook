@@ -98,16 +98,16 @@ button:hover {
     }
 }
 
-@media (max-width: 868px) {
+@media (max-width: 768px) {
     .flipbook {
         width: 90vw;   
-        height: 50vh;  
+        height: 45vh;  
     }
 }
 
-@media (max-width: 745px) {
+@media (max-width: 480px) {
     .flipbook {
         width: 95vw;   /* 95% of the viewport width */
-        height: 43vh;  /* 60% of the viewport height */
+        height: 40vh;  /* 60% of the viewport height */
     }
 }
