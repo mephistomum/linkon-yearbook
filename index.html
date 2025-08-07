@@ -5,29 +5,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <style>
+ <style>
   /* Styling for the return button */
-.return-button-container {
-  text-align: center;
-  margin-top: 20px; /* Space between the book and the button */
-}
+  .return-button-container {
+    text-align: center;
+    margin-top: 20px; /* Space between the book and the button */
+  }
 
-button {
-  background-color: #4CAF50; /* Green */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
+  button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
 
-button:hover {
-  background-color: #45a049;
-}
+  button:hover {
+    background-color: #45a049;
+  }
+
+  /* Ensure canvas is behind the book */
+  #bfCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Make sure the canvas does not block interactions with the book */
+    z-index: -1; /* Make canvas behind all other elements */
+  }
+
+  .flipbook {
+    position: relative;
+    z-index: 1; /* Ensure flipbook is on top of the canvas */
+  }
 </style>
+
   <title>UNICORNS : YEARBOOK 2025</title>
 </head>
 
@@ -84,8 +101,13 @@ button:hover {
   <button onclick="window.location.href='https://t.co/0eCTRJr2sV'">Return to Gallery</button>
 </div>
   
+    <canvas
+  id="bfCanvas"
+  style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+         pointer-events: none; z-index: 0;"></canvas>
   <script src="jquery.js"></script>
   <script src="turn.js"></script>
+  <script src="butterfly.js"></script>
   <script>
     $(".flipbook").turn();
   </script>
