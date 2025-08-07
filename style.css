@@ -91,7 +91,7 @@ button:hover {
 }
 
 /* Media Queries for smaller devices */
-@media (max-width: 1024px) {
+@media (max-width: 2360px) {
     .flipbook {
         width: 80vw;  
         height: 50vh;  
