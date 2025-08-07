@@ -52,8 +52,8 @@
   <div class="flipbook">
 <div class="hard">
  <picture>
-  <source srcset="images/cover-small.png" media="(max-width: 480px)">
-  <source srcset="images/cover-large.png" media="(max-width: 768px)">
+  <source srcset="images/cover-small.png" media="(max-width: 612px)">
+  <source srcset="images/cover-large.png" media="(max-width: 840px)">
   <img 
     src="images/cover-large.png" 
     alt="Book Cover" 
@@ -152,13 +152,15 @@
     const flipbook = document.querySelector('.flipbook');
     const screenWidth = window.innerWidth;
 
-    if (screenWidth <= 480) {
+    if (screenWidth <= 745) {
       flipbook.style.width = '95vw';
-      flipbook.style.height = '40vh';
-    } else if (screenWidth <= 768) {
+      flipbook.style.height = '43vh';
+    } 
+    else if (screenWidth <= 800) {
       flipbook.style.width = '90vw';
       flipbook.style.height = '50vh';
-    } else if (screenWidth <= 1024) {
+    } 
+    else if (screenWidth <= 1024) {
       flipbook.style.width = '80vw';
       flipbook.style.height = '50vh';
     } else {
