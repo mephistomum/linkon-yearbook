@@ -152,15 +152,17 @@
     const flipbook = document.querySelector('.flipbook');
     const screenWidth = window.innerWidth;
 
-    if (screenWidth <= 480) {
+    if (screenWidth <= 565) {
       flipbook.style.width = '95vw';
       flipbook.style.height = '40vh';
+    
     } else if (screenWidth <= 768) {
       flipbook.style.width = '90vw';
-      flipbook.style.height = '45vh';
+      flipbook.style.height = '48vh';
     } else if (screenWidth <= 1024) {
       flipbook.style.width = '80vw';
       flipbook.style.height = '50vh';
+      
     } else {
       flipbook.style.width = '1024px';
       flipbook.style.height = '650px';

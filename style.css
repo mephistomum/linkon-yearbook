@@ -93,21 +93,22 @@ button:hover {
 /* Media Queries for smaller devices */
 @media (max-width: 1024px) {
     .flipbook {
-        width: 80vw;   /* 80% of the viewport width */
-        height: 50vh;  /* 50% of the viewport height */
+        width: 80vw;  
+        height: 50vh;  
     }
 }
 
 @media (max-width: 768px) {
     .flipbook {
         width: 90vw;   
-        height: 45vh;  
+        height: 48vh;  
+
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 565px) {
     .flipbook {
-        width: 95vw;   /* 95% of the viewport width */
-        height: 40vh;  /* 60% of the viewport height */
+        width: 95vw;   
+        height: 40vh;  
     }
 }
